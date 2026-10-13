@@ -99,5 +99,6 @@ quality. Only publish or upload a finished video when the user authorizes it.
 Automated browser checks must be headless, with Pointer Lock and cursor capture
 disabled; synthetic input must remain inside the virtual browser.
 
-For short-form edits, read `docs/SHORT-FORM.md` and use the plan and footage
+For short-form edits, read `docs/SHORT-FORM.md` and `docs/EDITING-PLAYBOOK.md`
+(Nate's measured house style and lessons), and use the plan and footage
 validators. Structural checks supplement rendered video and audio review.

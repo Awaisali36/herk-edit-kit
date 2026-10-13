@@ -33,6 +33,7 @@ https://github.com/user-attachments/assets/4ad48761-d14c-407a-9dec-1b76a9afb04a
 
 ## What's included
 
+- **[Editing playbook](docs/EDITING-PLAYBOOK.md):** how Nate's videos get edited with AI, the measured house reel style, the B-roll, caption, and sound rules, and how every note becomes a rule in a skill.
 - **15 skills**, mirrored for both assistants, with their helper scripts and references.
 - **406 draft motion-graphics cards** across two styles, with manifests, CSS tokens, and editable slots.
 - **Two scene templates:** dark graph paper and a left glass popout.
@@ -143,6 +144,7 @@ Shorts compositions. [Migration and compatibility notes](docs/MIGRATION.md).
 
 | Resource | Start here |
 | --- | --- |
+| How Nate edits (style, rules, lessons) | [Editing playbook](docs/EDITING-PLAYBOOK.md) |
 | Shared agent instructions | [AGENTS.md](AGENTS.md) |
 | Motion and transition vocabulary | [MOTION_PHILOSOPHY.md](MOTION_PHILOSOPHY.md) |
 | Card library and design tokens | [Library guide](style-library/GUIDE.md) |
