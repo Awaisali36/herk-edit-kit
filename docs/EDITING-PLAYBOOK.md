@@ -34,6 +34,8 @@ Real examples of notes that became rules:
 | "Those laser sound effects sound cheap." | The sound palette switched to soft taps, dry clicks, paper, and air. No pitch-drop plops or zaps. |
 | "The lips are behind the voice by the end." | Cuts select exact frames in one pass, and a sync check compares every cut frame against the raw. |
 | "Captions should never blink out." | On shots full of text to read, captions move to a clear zone instead of disappearing. |
+| "You cut out my natural pause after 'first', it feels too quick." Then, after a fix that added silence there: "You muted out the word first." | Speech is cut between phrases at real silence, never inside one. A filler that runs straight into the next word stays, because cutting it clips the words around it. |
+| "The caption covers my mouth in the first second." | A caption that runs across a cut moves with the cut, and the first 2.5 s are checked frame by frame for anything over the mouth. |
 
 The editing knowledge lives in the skill files, so you can read it, edit it, and share it.
 
@@ -42,8 +44,8 @@ The editing knowledge lives in the skill files, so you can read it, edit it, and
 This is the order the `short-form-edit` and `edit-video` skills follow.
 
 1. **Transcribe** with word-level timestamps (ElevenLabs Scribe is Nate's default; Whisper works).
-2. **Cut retakes.** Keep the last clean take of each line. Splicing two takes mid-sentence is fine when it sounds natural.
-3. **Tighten every pause.** Never speed the voice up. Tightness comes from removing gaps.
+2. **Cut retakes.** Keep the last clean take of each line. Join two takes only where both sides are silent; if the takes run together, play one take whole.
+3. **Cut between phrases, never inside one.** A phrase is what you say in one breath. Remove the dead air between phrases and keep your natural beats (after a comma, after "First,"). Drop a filler only when there is silence on both sides of it: "First, what it does is it transcribes" is one phrase, and cutting "what it does is" clips the word "First". Never speed the voice up.
 4. **Plan the story before any visuals:** hook, proof, the items, the payoff, the CTA. Write it down.
 5. **Source B-roll**, one visual per noun phrase, in the preference order below.
 6. **Build the composition** in HyperFrames, every shot anchored to the spoken word it illustrates.
@@ -56,7 +58,7 @@ Measured on Nate's 27 top Instagram Reels (March to September 2026). Use them as
 
 **Pacing**
 - Speech starts within 0.1 s. The file ends right after the last word. No intro or outro card.
-- No pause over about 0.2 s anywhere. Typical gap between words is 0.04 s (median) and 0.1 s (90th percentile), at 4.0 to 4.7 words per second.
+- No dead air: pauses between phrases stay under about 0.2 s. Natural beats after a comma or a list marker ("First,") run 0.2 to 0.4 s and stay. Typical gap between words is 0.04 s (median) and 0.1 s (90th percentile), at 4.0 to 4.7 words per second. Tightness comes from removing dead air between phrases.
 - Shots average 1.1 to 1.4 s, none over about 2.8 s. The first cut lands at 0.6 to 1.0 s, on the first charged word.
 - Each item in a spoken list gets its own shot.
 
@@ -102,6 +104,7 @@ Rules that came from mistakes:
 - **One look for the whole reel:** every caption in the same dark box with a thin light edge, so it reads on black, white, and footage alike. Mixing boxed and bare captions looked cheap.
 - **Never white on light.** Measure the pixels behind every caption.
 - Position: on the seam in a split, on the shirt in a punch-in (not the jaw), and in a clear zone when the shot is text to read.
+- **Never over the mouth or chin,** least of all in the first second, when the viewer decides whether the person on screen is real. A caption that runs across a cut moves to the new shot's spot on the cut frame.
 
 ## Music and sound effects
 
@@ -133,6 +136,8 @@ The agent checks its own work before you see it:
 - **Lip sync:** match cut frames against the raw. A matching frame count alone does not prove the right frames were picked.
 - **Frame strips** across every cut (10 frames each side). They catch one-frame empty panels and captions flashing over the wrong shot that single screenshots miss.
 - **Contrast** behind every caption.
+- **Every word whole:** transcribe the final render and compare the words at every cut with the raw recording. A transcript alone is not proof: speech-to-text guesses a clipped word correctly while a listener hears it broken.
+- **The first second:** read the first 2.5 s frame by frame and the first frame of every face shot. Nothing covers the mouth.
 - **Loudness and true peak** on the delivered file.
 - **AI watch tests** (a video model watching the render) are useful for candidate problems, but they are noisy and hallucinate effects. Verify every complaint on real frames before acting. A persona panel ("would this viewer finish? where did they stop?") is more useful than a 1 to 10 score.
 - **Your review is the final gate.** Nate caught a lip-sync drift that every automated check missed.
@@ -145,5 +150,6 @@ The agent checks its own work before you see it:
 - Some docs sites scroll an inner container; scroll with the mouse wheel, not `window.scrollTo`.
 - A dark caption box disappears on a dark background unless it has a thin light edge.
 - Animate transforms (x, y, scale), not `top` or `left`.
+- Cutting a filler out of the middle of a phrase clips the words around it, and putting a pause there makes the clipped word sound muted. The version that worked had fewer cuts, all between phrases, and ran 5 s longer.
 - Measure loudness on the stereo delivery. A mono file reads 3 dB lower and one reel shipped too loud because of it.
 - A raw recording caps the edit. A clip with no hook and no CTA scores low no matter how well it's cut. Script the hook before you record.
