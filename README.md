@@ -16,16 +16,22 @@ lands as the play button in the logo.
 
 https://github.com/user-attachments/assets/056b46e9-7379-4e71-b825-20fb9f8e9555
 
-The three short-form videos below were created by Nate. Press Play on any video
-to watch it here in the README.
+The three short-form videos below were recorded by Nate. The first two were
+edited end to end by an AI agent running the editing skills in this kit, from his
+raw recording: cuts, captions, B-roll, motion graphics, music, and sound effects.
+Press Play on any video to watch it here in the README.
 
-### Curiosity reel: unlock your project
+### AI edits everything: the reveal
 
-https://github.com/user-attachments/assets/920cc3b7-6ef0-4324-aa98-870c1c2a07c5
+One take of Nate talking, edited by the agent into a 51-second reel about how it was edited.
 
-### Curiosity reel: build a better AI system
+https://github.com/user-attachments/assets/6fe4fc3b-c381-45f6-8305-efae2a0b0132
 
-https://github.com/user-attachments/assets/ba468302-fe07-4e4c-949b-68951dd84625
+### AI edits everything: raw vs edited
+
+Opens on the untouched raw recording, then hard-cuts to the finished edit and walks through what the agent did.
+
+https://github.com/user-attachments/assets/733bc3f0-432f-41a0-b52d-107cd7f0c806
 
 ### AIS Live ad
 
