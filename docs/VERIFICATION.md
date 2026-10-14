@@ -1,6 +1,6 @@
 # Release verification
 
-## Consolidated student kit, version 2
+## Consolidated Herk Edit Kit, version 2
 
 - All 14 canonical skills passed frontmatter validation, and all 94 skill resources
   match the Codex mirrors. The distribution check reports zero errors across

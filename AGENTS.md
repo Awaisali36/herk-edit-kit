@@ -1,4 +1,4 @@
-# HyperFrames Student Kit: workspace guide
+# Herk Edit Kit: workspace guide
 
 Turn a talking-head recording into an intentional edit using local HyperFrames
 rendering, transcript-driven cuts, and reusable motion graphics.
